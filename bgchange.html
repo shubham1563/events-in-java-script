@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <script>
+        var btn = document.querySelector('#btn');
+        var body = document.querySelector('body');
+        btn.addEventListener('click', function(){
+            body.classList.toggle("bg-red")
+
+        })
+    </script>
+</body>
+</html>
